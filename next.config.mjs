@@ -2,7 +2,7 @@
 
 const nextConfig = {
     output: 'export',
-    basePath: '/docs',
+    basePath: '/mainframe',
     // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
     // trailingSlash: true,
    
