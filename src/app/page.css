@@ -1,0 +1,32 @@
+
+@brick-color: #bd5858;
+@brick-border-radius: 2px;
+@brick-width: 2vw;
+@brick-height: 2vw;
+@brick-space: 0.5px;
+@brick-side-space: 2px;
+
+.brick(@width) {
+  background: @brick-color;
+  width: @width;
+  height: @brick-height;
+  border-radius: @brick-border-radius;
+  margin: @brick-space;
+  box-shadow: 0 0 19px 1px darken(@brick-color, 20%) inset;
+}
+
+.row {
+  display: flex;
+  background: #ccc;
+}
+
+.brick {
+  .brick(@brick-width);
+
+  &:last-child {
+    margin-right: @brick-side-space;
+  }
+  &:first-child {
+    margin-left: @brick-side-space;
+  }
+}
