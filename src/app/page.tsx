@@ -4,14 +4,17 @@ import "./page.css";
 import React from 'react';
 
 export default function Home() {
+  const numColumns = 36; // Adjust the number of columns as needed
+  const items = new Array(810).fill(null);
+
   return (
-    <main className="">
-      {/*<h1 className="text-4xl font-bold">MainFrame</h1>
+    <main className="flex flex-col items-center justify-center">
+      <h1 className="text-4xl font-bold">MainFrame</h1>
       <p className="text-lg font-light">
         The portfolio of Pablo cantudo.<br />
-      </p>*/}
-      <ul className="grid grid-cols-36 gap-1">
-        {(new Array(810)).fill(null).map((_, i) => (
+      </p>
+      <ul className={`grid grid-cols-${numColumns} gap-1`}>
+        {items.map((_, i) => (
           <li key={i} className="w-6 h-6">
             <div className="group relative w-full h-full">
               <div className="absolute inset-0 bg-black rounded-md opacity-0 group-hover:opacity-100 transform transition-transform">
