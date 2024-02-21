@@ -10,7 +10,7 @@ export default function Home() {
       <p className="text-lg font-light">
         The portfolio of Pablo cantudo.<br />
       </p>
-      <ul data-flip="">
+      <ul data-flip="grid grid-cols-36 gap-1">
         {(new Array(810)).fill(null).map((_, i) => (
           <li key={i}>
             <div className="flipper">
