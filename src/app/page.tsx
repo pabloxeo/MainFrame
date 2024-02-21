@@ -15,10 +15,10 @@ export default function Home() {
           <li key={i}>
             <div className="flipper">
               <div className="flipper__dot">
-                <span className="flipper__front">
+                <span className="flipper__back">
                   {/* Front content */}
                 </span>
-                <span className="flipper__back">
+                <span className="flipper__front">
                   {/* Back content */}
                 </span>
               </div>
