@@ -26,7 +26,7 @@ ul li {
 .flipper__dot {
   width: 24px;
   height: 24px;
-  transition: 0.8s;
+  transition: 0.5s;
   transform-style: preserve-3d;
 }
 
@@ -43,7 +43,6 @@ ul li {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 20px;
 }
 
 .flipper__front {
