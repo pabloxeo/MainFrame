@@ -1,9 +1,10 @@
-import "./page.css";
-
+"use client";
 import React from 'react';
 import { useRef, useEffect } from 'react';
+import "./page.css";
 
 export default function Home() {
+  
   const ref = useRef(null);
   const [nElements, setNElements] = React.useState(0);
 
