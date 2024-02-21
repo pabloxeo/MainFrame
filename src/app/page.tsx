@@ -1,15 +1,11 @@
-"use client"
-import Image from "next/image";
 import "./page.css";
 
 import React from 'react';
 import { useRef, useEffect } from 'react';
-import { AnyNode } from "postcss";
 
 export default function Home() {
   const ref = useRef(null);
   const [nElements, setNElements] = React.useState(0);
-  const [pixelWidth, setPixelWidth] = React.useState(0);
 
   let update_nelements = (ref: any) => {
       let pixel_width = 8;
@@ -21,12 +17,6 @@ export default function Home() {
       setNElements(n_elements);
   }
 
-  let update_pixelwidth = (ref: any) => {
-    let ref_width = (ref.current as HTMLUListElement).clientWidth;
-    let pixel_width = Math.floor(ref_width/(nElements/10));
-    setPixelWidth(pixel_width);  
-  }
-
 
   useEffect(() => {
     if (ref.current) {
@@ -34,16 +24,11 @@ export default function Home() {
     }
   }, [ref]);
 
-
-
-  
-
-
   return (
     <main className="">
       <h1 className="text-4xl font-bold">MainFrame</h1>
       <p className="text-lg font-light">
-        The portfolio of Pablo cantudo.<br />
+        The portfolio of Pablo cantudo.
       </p>
       <ul data-flip="" ref={ref} >
         {(new Array(nElements)).fill(null).map((_, i) => (
