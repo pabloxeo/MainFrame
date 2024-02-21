@@ -26,12 +26,12 @@ ul li {
 .flipper__dot {
   width: 24px;
   height: 24px;
-  transition: 1s;
+  transition: 0.8s;
   transform-style: preserve-3d;
 }
 
 .flipper:hover .flipper__dot {
-  transform: rotateY(180deg);
+  transform: rotateX(180deg);
 }
 
 .flipper__front,
