@@ -13,8 +13,8 @@ ul {
 
 ul li {
   float: left;
-  width: 24px;
-  height: 24px;
+  width: 6px;
+  height: 6px;
   margin: 0 0 2px 2px;
 }
 
@@ -24,8 +24,8 @@ ul li {
 }
 
 .flipper__dot {
-  width: 24px;
-  height: 24px;
+  width: 6px;
+  height: 6px;
   transition: 0.5s;
   transform-style: preserve-3d;
 }
