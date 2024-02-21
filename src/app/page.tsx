@@ -10,15 +10,15 @@ export default function Home() {
       <p className="text-lg font-light">
         The portfolio of Pablo cantudo.<br />
       </p>
-      <ul data-flip="grid grid-cols-36 gap-1">
+      <ul data-flip="">
         {(new Array(810)).fill(null).map((_, i) => (
           <li key={i}>
             <div className="flipper">
               <div className="flipper__dot">
-                <span className="flipper__back">
+                <span className="flipper__front">
                   {/* Front content */}
                 </span>
-                <span className="flipper__front">
+                <span className="flipper__back">
                   {/* Back content */}
                 </span>
               </div>

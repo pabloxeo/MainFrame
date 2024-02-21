@@ -47,12 +47,12 @@ ul li {
 }
 
 .flipper__front {
-  background-color: #000;
+  background-color: white;
   z-index: 2;
   transform: rotateY(0deg);
 }
 
 .flipper__back {
-  background-color: #fff;
+  background-color: green;
   transform: rotateY(180deg);
 }
