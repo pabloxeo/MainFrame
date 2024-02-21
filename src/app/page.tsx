@@ -6,10 +6,10 @@ import React from 'react';
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center">
-      <h1 className="text-4xl font-bold">MainFrame</h1>
+      {/* <h1 className="text-4xl font-bold">MainFrame</h1>
       <p className="text-lg font-light">
         The portfolio of Pablo cantudo.<br />
-      </p>
+      </p> */}
       <ul className="grid grid-cols-36 gap-1">
         {(new Array(810)).fill(null).map((_, i) => (
           <li key={i} className="w-6 h-6">
